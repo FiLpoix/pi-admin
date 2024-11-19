@@ -97,3 +97,16 @@ body {
 .consultas li{
     margin-right: 70px;
 }
+
+.registerBtn{
+    background-color: #01b86c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registerBtn:hover {
+    background-color: #26b139;
+}
