@@ -2,111 +2,109 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-}
-
-body {
+    background: #fff;
+    color: #333;
+  }
+  
+  .container {
     display: flex;
     height: 100vh;
-    background-color: #fff;
-}
-
-.container {
-    display: flex;
-    width: 100%;
-}
-
-/* sidebar */
-.sidebar {
-    width: 250px;
-    background-color: #56D3D5;
-    color: #333;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background: #56D3D5;
     padding: 20px;
-}
-
-.sidebar h2 {
-    text-align: center;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 20px 0;
-}
-
-.sidebar ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-button {
+    width: 100%;
     padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background: #b2ebf2;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+.sidebar-button:hover{
+    background: #22696b;
 }
 
-.sidebar ul li a:hover {
-    background-color: #6bd7d9;
-}
-
-
-/* main content */
-.main-content {
+  .main-content {
     flex: 1;
     padding: 20px;
-    /* background-color: #56D3D5; */
-}
-
-.main-content h1 {
-    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
     margin-bottom: 20px;
-}
-
-.lista{
-    display: flex;
-    justify-content: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
     margin-bottom: 20px;
-}
-
-.lista ul{
-    list-style: none;
-    display: flex;
-    border: 1px solid #333;
-    padding-left: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  th {
+    background: #56D3D5;
+  }
+  
+  .status {
+    padding: 5px 10px;
     border-radius: 5px;
-}
-
-.lista li{
-    margin-right: 80px;
-}
-
-.consultas{
-    display: flex;
-    justify-content: center;   
-}
-
-.consultas ul{
-    list-style: none;
-    display: flex;
-    border: 1px solid #333;
-    padding-left: 20px;
-    border-radius: 5px;
-}
-
-.consultas li{
-    margin-right: 70px;
-}
-
-.registerBtn{
-    background-color: #01b86c;
     color: #fff;
+    font-weight: bold;
+  }
+  
+  .status.concluido {
+    background: #4caf50;
+  }
+  
+  .status.pendente {
+    background: #f44336;
+  }
+  
+  .status.andamento {
+    background: #ff9800;
+  }
+  
+  .action-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .register-button {
     padding: 10px 20px;
+    background: #56D3D5;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+    font-size: 16px;
+  }
 
-.registerBtn:hover {
-    background-color: #26b139;
-}
+  .register-button:hover{
+    background: #22696b;
+  }
+  

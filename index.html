@@ -1,54 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administração</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=settings" />
-    <link rel="stylesheet" href="src/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administração</title>
+  <link rel="stylesheet" href="src/style.css" />
 </head>
 <body>
-    <div class="container">
-        <!-- sidebar -->
-        <nav class="sidebar">
-            <img src="#" alt="">
-            <h2>HAVE Odonto</h2>
-            <ul>
-                <li><a href="#">Página inicial</a></li>
-                <li><a href="#">Administração</a></li>
-            </ul>
-        </nav>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="#" alt="Logo" />
+      </div>
+      <nav>
+        <button class="sidebar-button ativo">Administração</button>
+        <button class="sidebar-button">Histórico de Consultas</button>
+      </nav>
+    </aside>
 
-        <!-- administração -->
-        <div class="main-content">
-            <h1>Administração</h1>
-            <!-- <div class="historico"> -->
-                <div class="lista">
-                    <ul>
-                        <li>id</li>
-                        <li>nome</li>
-                        <li>telefone</li>
-                        <li>data</li>
-                        <li>status</li>
-                        <li>ações</li>
-                    </ul>
-                </div>
-                <div class="consultas">
-                    <ul>
-                        <li>001</li>
-                        <li>Jorge</li>
-                        <li>9999999999</li>
-                        <li>12/12/12</li>
-                        <li>Pendente</li>
-                        <li>
-                            <span class="material-symbols-outlined">settings</span>
-                        </li>
-                    </ul>
-                </div>
-            <!-- </div> -->
-            <button class="registerBtn">Registrar consultas</button>
-        </div>
-    </div>
-    <script src="src/script.js"></script>
+    <main class="main-content">
+      <h1>Administração</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Data</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#2630</td>
+            <td>Carlos Henrique</td>
+            <td>(86) 99999-9999</td>
+            <td>05 Nov 2024</td>
+            <td><span class="status concluido">Concluído</span></td>
+            <td>
+              <button class="action-button"><img src="#" alt="Editar" /></button>
+              <button class="action-button"><img src="#" alt="Excluir" /></button>
+            </td>
+          </tr>
+          <tr>
+            <td>#2630</td>
+            <td>Apolo</td>
+            <td>(86) 99999-9999</td>
+            <td>05 Nov 2024</td>
+            <td><span class="status pendente">Pendente</span></td>
+            <td>
+              <button class="action-button"><img src="#" alt="Editar" /></button>
+              <button class="action-button"><img src="#" alt="Excluir" /></button>
+            </td>
+          </tr>
+          <tr>
+            <td>#2630</td>
+            <td>Morgana</td>
+            <td>(86) 99999-9999</td>
+            <td>05 Nov 2024</td>
+            <td><span class="status andamento">Andamento</span></td>
+            <td>
+              <button class="action-button"><img src="#" alt="Editar" /></button>
+              <button class="action-button"><img src="#" alt="Excluir" /></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="register-button">Registrar Consulta</button>
+    </main>
+  </div>
 </body>
 </html>
