@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Administração</title>
-  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/css/adm.css" />
+  <link rel="shortcut icon" href="src/img/Group 3.png" type="image/x-icon">
 </head>
 <body>
   <div class="container">
     <aside class="sidebar">
       <div class="logo">
-        <img src="#" alt="Logo" />
+        <img src="src/img/Group 3.png" alt="Logo" />
       </div>
       <nav>
         <button class="sidebar-button ativo">Administração</button>
-        <button class="sidebar-button">Histórico de Consultas</button>
       </nav>
     </aside>
 
@@ -39,8 +39,8 @@
             <td>05 Nov 2024</td>
             <td><span class="status concluido">Concluído</span></td>
             <td>
-              <button class="action-button"><img src="#" alt="Editar" /></button>
-              <button class="action-button"><img src="#" alt="Excluir" /></button>
+              <button class="action-button" ><img src="src/img/settings_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Editar"  /></button>
+              <button class="action-button"><img src="src/img/delete_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Excluir" onclick="excluirForm()"/></button>
             </td>
           </tr>
           <tr>
@@ -50,8 +50,8 @@
             <td>05 Nov 2024</td>
             <td><span class="status pendente">Pendente</span></td>
             <td>
-              <button class="action-button"><img src="#" alt="Editar" /></button>
-              <button class="action-button"><img src="#" alt="Excluir" /></button>
+              <button class="action-button"><img src="src/img/settings_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Editar" /></button>
+              <button class="action-button"><img src="src/img/delete_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Excluir" /></button>
             </td>
           </tr>
           <tr>
@@ -61,13 +61,48 @@
             <td>05 Nov 2024</td>
             <td><span class="status andamento">Andamento</span></td>
             <td>
-              <button class="action-button"><img src="#" alt="Editar" /></button>
-              <button class="action-button"><img src="#" alt="Excluir" /></button>
+              <button class="action-button"><img src="src/img/settings_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Editar" /></button>
+              <button class="action-button"><img src="src/img/delete_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Excluir" /></button>
+            </td>
+          </tr>
+          <tr>
+            <td>#2630</td>
+            <td>Morgana</td>
+            <td>(86) 99999-9999</td>
+            <td>05 Nov 2024</td>
+            <td><span class="status pendente">Pendente</span></td>
+            <td>
+              <button class="action-button"><img src="src/img/settings_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Editar" /></button>
+              <button class="action-button"><img src="src/img/delete_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Excluir" /></button>
+            </td>
+          </tr>
+          <tr>
+            <td>#2630</td>
+            <td>Morgana</td>
+            <td>(86) 99999-9999</td>
+            <td>05 Nov 2024</td>
+            <td><span class="status andamento">Andamento</span></td>
+            <td>
+              <button class="action-button"><img src="src/img/settings_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Editar" /></button>
+              <button class="action-button"><img src="src/img/delete_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Excluir" /></button>
+            </td>
+          </tr>
+          <tr>
+            <td>#2630</td>
+            <td>Morgana</td>
+            <td>(86) 99999-9999</td>
+            <td>05 Nov 2024</td>
+            <td><span class="status concluido">Concluído</span></td>
+            <td>
+              <button class="action-button"><img src="src/img/settings_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Editar" /></button>
+              <button class="action-button"><img src="src/img/delete_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Excluir" /></button>
             </td>
           </tr>
         </tbody>
       </table>
-      <button class="register-button">Registrar Consulta</button>
+      <button class="register-button">
+        <a href="resgiter.html">Registrar Consulta</a> 
+      </button>
     </main>
   </div>
 </body>
