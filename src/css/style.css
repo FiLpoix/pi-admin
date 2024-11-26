@@ -51,6 +51,11 @@ body {
     background-color: #6bd7d9;
 }
 
+.logo{
+    width: 100px;
+    margin-left: 50px;
+}
+
 .main-content {
     flex: 1;
     padding: 20px;
