@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/img/Group 3.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <img class="logo" src="src/img/Group 3.png" alt="">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="index.html">Administração</a></li>
+                <li><a href="#">Agendar</a></li>
+            </ul>
+        </nav>
+        <!-- Cadastro do médico -->
+        <div class="main-content">
+            <h1>Cadastre um médico</h1>
+            <form id="formMedico">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="especialidade">especialidade:</label>
+                <select name="especialidade" id="especialidade">
+                    <option value="especial">especial</option>
+                </select>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone"></label>
+                <input type="text" id="telefone" name="telefone" required>
+
+                <button>Cadastrar médico</button>
+            </form>
+        </div>
+
+        <div class="historico">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>email</th>
+                        <th>especialidade</th>
+                        <th>Telefone</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carlos Henrique</td>
+                        <td>email@email.com</td>
+                        <td>especial</td>
+                        <td>(86) 99999-9999</td>   
+                        <td><span class="delete">Delete</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
