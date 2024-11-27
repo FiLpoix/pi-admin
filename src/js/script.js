@@ -25,3 +25,4 @@ document.getElementById('formAgendamento').addEventListener('submit', function(e
       showAlert('Erro', 'Por favor, preencha todos os campos.');
   }
 });
+

@@ -88,6 +88,21 @@ body {
   th {
     background: #56D3D5;
   }
+  .config {
+    background: #e6dddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;   
+  }
+  .config img {
+    width: 25px;
+    height: 25px;
+  }
+  .config:hover{
+    background:#ccc;
+  }
+
   
   .status {
     padding: 5px 10px;
@@ -185,6 +200,7 @@ table {
     padding: 10px;
     border: 1px solid #ccc;
     text-align: left;
+    
   }
   
   th {
@@ -192,11 +208,12 @@ table {
   }
 
   .delete {
-    background: #f44336;
-    padding: 5px 10px;
+    background: #e6dddd;
+    padding: 5px 10px ;
     border-radius: 5px;
     color: #fff;
-    font-weight: bold;   
+    font-weight: bold; 
+      
   }
 
   .delete img {
@@ -205,7 +222,7 @@ table {
   }
 
   .delete:hover{
-    background:#a2261d;
+    background:#e0281b;
   }
 
   /* especialidades */
@@ -243,6 +260,32 @@ form input, form select {
     resize: none;
 }
 
+/* Responsividades */
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+
+/* media query de tela grande da page especialidades */
+@media (min-width:1200px){
+    #especialidade{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 30px;
+    }
+}
 
 /* Estilo do modal */
 #customAlert {
